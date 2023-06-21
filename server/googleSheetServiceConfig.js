@@ -1,0 +1,13 @@
+export default {
+    "type": "service_account",
+    "project_id": "alert-outlet-390407",
+    "private_key_id": "8909ad25e7043f22e2e8afe672bd50df098ceefd",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4zwbhwdTfjHXm\nBSJweVowafTFcOpYei5lx6wxucPu3SCF5VvJ4zEnPrcegVzLCk8WTjuQ7jl7wjO3\n60/8qJbz00YU/3WzEGfXsXxdz9jVxbKEeBy5Zm03CAxhuWPSchZQEE5KIUM8n68Z\nCLPJThskgyR218RsPDZcBhivLqBD+3gGAYtkN3IZF+MQwUVtfsUOyEpY71F4lP/g\nGTJCoIzZkLJFHz+L85RqGoFXAZaSwUuolSrvub+UXA13oJQNVhKpkIPmnLN4Pjnm\nWS03q60B0dyquTG36SaILH9AfY15dKgyQ0H8Yu79qzLa7uMEIpAHlDfthWQG3v/i\nkOonKdPhAgMBAAECggEABK0qJjOU7lSi7Iii3tFNlUucgziAmQHXDJQiZGdxVU2o\nuDzwLgWRN+rLa99DIetL7uI0VTvg1OzxUjrinTIGorHatqJPXcj12N7DFvMw+WKw\nyhhXISmZSAi1vu1OqfqFyZcBLnAHdwcuinOOkIUfzf2Bi35QYXYw4ITSHcwidVgr\nnw20Sa4d5heK6PeA7CBVYyjd8R6FAD0aseX80LIXi3uJqzYOD3n2XVERWywdQAXI\nTP5jHQHQMbk0C9UGrS09za52St+jX6KbYIUpvihuRo9SmS/me2iqN3QfKcj9g3ph\ngJiIgo5oI3/Zf2ak8Bszh87w9cpS9vOV5f1D2Wao6QKBgQD5PBpitom8JBelY+xX\n++YCT1EP3eL7hKug+URShniNMfkqIzgqbGJ2Ikd1wO4sawCb4DW7D47jP7FMgveW\nEWQx1PuEvOpg8KEu617gG2+F9hhY4APr7jKC7Zh1aUMR5MVC7lVCT2tTIi7ZaSe4\n4MgxwTbgJZEZcs8AkD2umL2xZQKBgQC90zx2KvQGZT9sAbF5AcWDyce/5vsHHkUT\nl0fsbmEZsADaysJxpuxoi18evDAKSBlgkgy+mTOpZ7bin/dYK772HLsbpbt1TELm\ncPnivoF8W8iCIuiTC9w1bofbuHw1iPKBWmsFlUBR5U0RkZmu+oXV1Skwz6PQeTo9\nmSIt1f5OzQKBgDRmqZmFjXHsGLiiSKe7A4IK0R1H5phBLaCbp/y93wy4rA1q+D0b\nKpxx2ppsZOcb3DXprwJUZBNtacaPZqS7pVhA0lz3J0QYc5scy4bM3ebJdhcBinGJ\nVD9o2vwclIhnk/3dhDl73zHMZxM446wgPpcPa402+Mnj9JfGu+FApeltAoGAS8tk\ngOp1tXgH8uBaNK74Zr7S+1UHNrhnbIMjPMx2CQO106bSLP8xtiywNl198R0IxP6M\nCC6z6hh3ddXZtWMCRNMEAu4SA6wHqmvB2z+mBDnBvfSiWNSLgOo5ZQoszlN4QR4R\nTZFitVCRjUpNywhNGCyc3diK2FsPXjke5J5lhKECgYEAswln90TtniiIYfytiRaB\nnd+VtOXj+CLMwID9h3NxtQlD26hgLDrwCBqZh8w1lYuf/K7tUpFkwHnZ38Lq/LjB\nSbzj4g7u+3Z4YfYpDVR+oo3IuacabYmYJu85KgQbhylqdrJNO+HSpVI4VnkN35LI\nz5+W7hZxIG0lfTGfGqiMnfY=\n-----END PRIVATE KEY-----\n",
+    "client_email": "bep-cua-me-discount@alert-outlet-390407.iam.gserviceaccount.com",
+    "client_id": "106390637618826295216",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bep-cua-me-discount%40alert-outlet-390407.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+}

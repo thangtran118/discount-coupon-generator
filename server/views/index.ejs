@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <title>Bếp của Mẹ</title>
+    <link rel="stylesheet" href="/css/tailwind.css">
+
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-50">
+<div class="w-4/5 max-w-screen-lg h-5/6 max-h-screen-md rounded-xl bg-white drop-shadow flex justify-between items-center divide-x">
+    <div class="basis-1/2 flex justify-center">
+        <img src="/logo.png" alt="logo bep cua me" class="w-72 h-72">
+    </div>
+    <div class="basis-1/2 px-20">
+        <h1 class="text-3xl font-semibold text-center mb-1">Bếp của Mẹ</h1>
+        <% if (isError) { %>
+            <p class="text-sm font-semibold text-red-400">Số điện thoại này không hợp lệ hoặc đã sử dụng trước
+                đó, vui lòng nhập số khác để tiếp tục!</p>
+        <% } %>
+        <form action="/submit" method="post" class="mt-8">
+            <div class="mb-3 text-center">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Tên của bạn"
+                       class="bg-gray-100 rounded-md h-12 w-full px-4 outline-none">
+            </div>
+            <div class="text-center">
+                <label for="phone"></label>
+                <input type="number" name="phone" id="phone" placeholder="Số điện thoại"
+                       class="h-12 bg-gray-100 rounded-md w-full pr-7 px-4 outline-none">
+            </div>
+            <div class="text-center mt-5">
+                <input type="submit" value="Lấy mã giảm giá ngay!"
+                       class="w-full bg-primary h-12 rounded-md text-white cursor-pointer"/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

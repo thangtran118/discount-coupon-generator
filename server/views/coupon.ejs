@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <title>Bếp của Mẹ</title>
+    <link rel="stylesheet" href="/css/tailwind.css">
+
+</head>
+<body class="h-screen bg-gray-50 flex justify-center items-center flex-col">
+<div class="rounded-xl bg-white drop-shadow flex justify-between items-center divide-x py-4">
+    <div class="px-4 w-full h-full flex justify-center items-center">
+        <img src="/logo.png" alt="logo bep cua me" class="w-28">
+    </div>
+    <div class="px-4">
+        <p class="text-end text-4xl font-semibold mb-3">10%</p>
+        <p class="flex justify-between items-center">
+            <span class="mr-20 w-max">Mã giảm giá</span>
+            <span class="border border-primary px-2 py-1 w-max cursor-pointer hover:bg-primary hover:text-white rounded-md relative"
+                  onclick="copyToClipboard()" id="discountCode">
+                <%= discountCode %>
+            </span>
+        </p>
+    </div>
+</div>
+<div class="mt-4">
+    <div class="max-w-3xl p-4 text-gray-800 bg-white rounded-lg shadow">
+        <p class="px-4 text-sm text-center text-gray-600">
+            Chúng tôi trân trọng đồng
+            hành cùng quý khách hàng trong việc mua sắm tại Bếp của Mẹ. Xin mời quý
+            khách nhấn vào ô màu đỏ để sao chép mã và liên hệ với chúng tôi <a
+                    class="text-blue-500 underline"
+                    href="https://facebook.com/bepcuamej.vn"
+                    target="_blank">tại
+                đây</a> để được hỗ trợ áp dụng mã giảm giá
+        </p>
+    </div>
+
+    <script>
+        copyToClipboard = () => {
+            const el = document.getElementById('discountCode')
+            const selection = window.getSelection();
+
+            const range = document.createRange();
+
+            range.selectNodeContents(el);
+
+            selection.removeAllRanges();
+
+            selection.addRange(range);
+
+            document.execCommand('copy');
+        }
+    </script>
+</body>
+</html>
