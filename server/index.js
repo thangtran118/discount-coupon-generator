@@ -71,6 +71,6 @@ app.post('/submit', async (req, res) => {
 })
 
 
-app.listen(port, 'localhost', () => {
+app.listen(port, () => {
     console.log(`App is running at the port ${port}`);
 });
