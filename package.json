@@ -6,7 +6,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "nodemon server",
+    "start": "nodemon server/index.js",
     "css": "npx tailwindcss -i ./public/css/preprocessor/tailwind.css -o ./public/css/tailwind.css --watch",
     "build:css": "npx tailwindcss -i ./public/css/preprocessor/tailwind.css -o ./public/css/tailwind.css --minify"
   },
