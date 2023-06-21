@@ -2,6 +2,9 @@
   "name": "discount-coupon-generator",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "nodemon server",
     "css": "npx tailwindcss -i ./public/css/preprocessor/tailwind.css -o ./public/css/tailwind.css --watch",
