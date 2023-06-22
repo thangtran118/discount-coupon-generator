@@ -12,14 +12,15 @@
 
 </head>
 <body class="h-screen flex justify-center items-center bg-gray-50">
-<div class="w-4/5 max-w-screen-lg h-5/6 max-h-screen-md rounded-xl bg-white drop-shadow flex justify-between items-center divide-x">
-    <div class="basis-1/2 flex justify-center">
-        <img src="/logo.png" alt="logo bep cua me" class="w-72 h-72">
+<div class="w-4/5 h-5/6 md:max-h-screen-md rounded-xl bg-white drop-shadow flex-col md:flex-row flex justify-center md:justify-between items-center md:divide-x">
+    <div class="flex w-full justify-center">
+        <img src="/logo.png" alt="logo bep cua me" class="w-48 md:w-7/12">
     </div>
-    <div class="basis-1/2 px-20">
-        <h1 class="text-3xl font-semibold text-center mb-1">Bếp của Mẹ</h1>
+    <div class="px-10 w-full lg:px-20">
+        <h1 class="text-3xl font-semibold text-center mb-1 mt-5 md:mt-0 2xl:text-5xl 2xl:mb-3">Bếp của Mẹ</h1>
         <% if (isError) { %>
-            <p class="text-sm font-semibold text-red-400">Số điện thoại này không hợp lệ hoặc đã sử dụng trước
+            <p class="text-sm font-semibold text-red-400 text-center">Số điện thoại này không hợp lệ hoặc đã sử dụng
+                trước
                 đó, vui lòng nhập số khác để tiếp tục!</p>
         <% } %>
         <form action="/submit" method="post" class="mt-8">
