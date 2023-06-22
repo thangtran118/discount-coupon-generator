@@ -11,7 +11,20 @@
     <link rel="stylesheet" href="/css/tailwind.css">
 
 </head>
-<body class="h-screen bg-gray-50 flex justify-center items-center flex-col p-4">
+<body class="h-screen bg-gray-50 flex justify-center items-center flex-col p-4 relative">
+<div class="opacity-0 flex shadow-lg rounded-lg absolute top-3 right-5 transition-opacity duration-200"
+     id="copy-success-alert">
+    <div class="bg-green-600 py-3 px-4 rounded-l-lg flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" viewBox="0 0 16 16" width="20"
+             height="20">
+            <path fill-rule="evenodd"
+                  d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+        </svg>
+    </div>
+    <div class="px-4 py-1 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200">
+        <div>Đã sao chép mã giảm giá thành công!</div>
+    </div>
+</div>
 <div class="rounded-xl bg-white drop-shadow flex justify-between items-center divide-x py-4">
     <div class="px-4 w-full h-full flex justify-center items-center">
         <img src="/logo.png" alt="logo bep cua me" class="w-24 md:w-28 lg:w-36">
@@ -39,22 +52,33 @@
                 đây</a> để được hỗ trợ áp dụng mã giảm giá
         </p>
     </div>
+</div>
 
-    <script>
-        copyToClipboard = () => {
-            const el = document.getElementById('discountCode')
-            const selection = window.getSelection();
+<script>
+    function copyToClipboard() {
+        showAlert()
+        const el = document.getElementById('discountCode')
+        const selection = window.getSelection();
 
-            const range = document.createRange();
+        const range = document.createRange();
 
-            range.selectNodeContents(el);
+        range.selectNodeContents(el);
 
-            selection.removeAllRanges();
+        selection.removeAllRanges();
 
-            selection.addRange(range);
+        selection.addRange(range);
 
-            document.execCommand('copy');
-        }
-    </script>
+        document.execCommand('copy');
+    }
+
+    function showAlert() {
+        const alert = document.getElementById('copy-success-alert')
+        alert.classList.remove('opacity-0')
+        setTimeout(() => {
+            alert.classList.add('opacity-0')
+        }, 2500)
+    }
+</script>
+
 </body>
 </html>
